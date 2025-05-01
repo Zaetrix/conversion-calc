@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>File Size & Speed Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>File Size & Speed Converter</h1>
+
+    <label>
+      Value:
+      <input type="number" id="valueInput" placeholder="e.g. 100" />
+    </label>
+
+    <label>
+      Convert:
+      <select id="conversionType">
+        <option value="mbpsToMBps">Mbps → MB/s</option>
+        <option value="MBpsToMbps">MB/s → Mbps</option>
+        <option value="gbToMb">GB → MB</option>
+        <option value="mbToGb">MB → GB</option>
+        <option value="gbToTb">GB → TB</option>
+        <option value="tbToGb">TB → GB</option>
+      </select>
+    </label>
+
+    <button onclick="convert()">Convert</button>
+    <p id="conversionResult"></p>
+  </div>
+
+  <script src="conversion.js"></script>
+</body>
+</html>
